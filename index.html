@@ -65,7 +65,11 @@
 	
 		var basemap_0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});	
-		basemap_0.addTo(map);	
+		basemap_0.addTo(map);
+		var basemap_1 = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', { 
+			attribution: additional_attrib + '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'});
+		var basemap_2 = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', { 
+			attribution: additional_attrib + '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});	
 	var layerOrder=new Array();
 							function pop_Urban(feature, layer) {
 										
@@ -503,11 +507,13 @@
 		legend.addTo(map);
 
 	var baseMaps = {
-		'OSM Standard': basemap_0
-	};
-	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 minutes": exp_7JSON,"8 minutes": exp_8JSON,"15 minutes": exp_15JSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": cluster_groupStationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:false}).addTo(map);
+		'OSM Standard': basemap_0,
+		'OSM HOT': basemap_1,
+		'Thunderforest Landscape': basemap_2};
+	L.control.layers(baseMaps,{"FirstOnSceneFailures": cluster_groupFirstOnSceneFailuresJSON,"BalanceofAlarmFailures": cluster_groupBalanceofAlarmFailuresJSON,"AllIncidents2014": cluster_groupAllIncidents2014JSON,"7": exp_7JSON,"8": exp_8JSON,"15": exp_15JSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": cluster_groupStationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:false}).addTo(map);
 	L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 	</script>
 </body>
 </html>
+	
 	
