@@ -514,7 +514,7 @@
 		'OSM HOT': basemap_1,
 		'Thunderforest Landscape': basemap_2};
 	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 Minutes": exp_7JSON,"8 Minutes": exp_8JSON,"15 Minutes": exp_15JSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": exp_StationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:false}).addTo(map);
-	L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
+	L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: true}}).addTo(map);
 	</script>
 </body>
 </html>
