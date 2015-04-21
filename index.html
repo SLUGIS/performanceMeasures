@@ -512,7 +512,7 @@
 		var logo = L.control({position: 'bottomleft'});
 		
 		logo.onAdd = function (map) {
-		var div = L.DomUtil.create('div', 'info legend');
+		var div = L.DomUtil.create();
 		div.innerHTML = '<img src="https://dl.dropboxusercontent.com/s/ecznojqm8lh3ozs/slo_co_fd_fdop.png?dl=0">';
     		return div;
 		};
