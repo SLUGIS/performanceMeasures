@@ -227,11 +227,14 @@
 					}}
 				);
 				
-				var cluster_groupStationsJSON= new L.MarkerClusterGroup({showCoverageOnHover: false});
-				cluster_groupStationsJSON.addLayer(exp_StationsJSON);
+				feature_group.addLayer(exp_StationsJSON);
+				layerOrder[layerOrder.length] = exp_StationsJSON;
+				for (index = 0; index < layerOrder.length; index++) {
+					feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
+				}
 				
 						//add comment sign to hide this layer on the map in the initial view.
-						cluster_groupStationsJSON.addTo(map);
+						exp_StationsJSON.addTo(map);
 							function pop_Battalions(feature, layer) {
 										
 	var popupContent = '<table><tr><th scope="row">OBJECTID</th><td>' + Autolinker.link(String(feature.properties['OBJECTID'])) + '</td></tr><tr><th scope="row">BATTALION</th><td>' + Autolinker.link(String(feature.properties['BATTALION'])) + '</td></tr><tr><th scope="row">Label</th><td>' + Autolinker.link(String(feature.properties['Label'])) + '</td></tr><tr><th scope="row">Shape_Leng</th><td>' + Autolinker.link(String(feature.properties['Shape_Leng'])) + '</td></tr><tr><th scope="row">Acres</th><td>' + Autolinker.link(String(feature.properties['Acres'])) + '</td></tr><tr><th scope="row">Shape_Le_1</th><td>' + Autolinker.link(String(feature.properties['Shape_Le_1'])) + '</td></tr><tr><th scope="row">Shape_Area</th><td>' + Autolinker.link(String(feature.properties['Shape_Area'])) + '</td></tr></table>';
@@ -510,7 +513,7 @@
 		'OSM Standard': basemap_0,
 		'OSM HOT': basemap_1,
 		'Thunderforest Landscape': basemap_2};
-	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 Minutes": exp_7JSON,"8 Minutes": exp_8JSON,"15 Minutes": exp_15JSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": cluster_groupStationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:false}).addTo(map);
+	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 Minutes": exp_7JSON,"8 Minutes": exp_8JSON,"15 Minutes": exp_15JSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": exp_StationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:false}).addTo(map);
 	L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 	</script>
 </body>
