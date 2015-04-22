@@ -36,6 +36,10 @@
 				<script src='data/exp_8.js' ></script>
 				
 				<script src='data/exp_15.js' ></script>
+
+				<script src='data/exp_City.js' ></script>
+				
+				<script src='data/exp_CSD.js' ></script>
 				
 				<script src='data/exp_URL.js' ></script>
 				
@@ -316,6 +320,60 @@
 				
 						//add comment sign to hide this layer on the map in the initial view.
 						//exp_URLJSON.addTo(map);
+						function pop_CSD(feature, layer) {
+										
+	var popupContent = '<table><tr><th scope="row">type</th><td>' + Autolinker.link(String(feature.properties['type'])) + '</td></tr><tr><th scope="row">name</th><td>' + Autolinker.link(String(feature.properties['name'])) + '</td></tr></table>';
+	layer.bindPopup(popupContent);
+
+
+				}
+						
+				var exp_CSDJSON = new L.geoJson(exp_CSD,{
+					onEachFeature: pop_CSD,
+					style: function (feature) {
+						return {color: feature.properties.border_color_qgis2leaf,
+								fillColor: feature.properties.color_qgis2leaf,
+								weight: feature.properties.radius_qgis2leaf,
+								dashArray: feature.properties.border_style_qgis2leaf,
+								opacity: feature.properties.transp_qgis2leaf,
+								fillOpacity: feature.properties.transp_fill_qgis2leaf};
+						}
+					});
+				feature_group.addLayer(exp_CSDJSON);
+				layerOrder[layerOrder.length] = exp_CSDJSON;
+				for (index = 0; index < layerOrder.length; index++) {
+					feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
+				}
+				
+						//add comment sign to hide this layer on the map in the initial view.
+						//exp_CSDJSON.addTo(map);
+							function pop_City(feature, layer) {
+										
+	var popupContent = '<table><tr><th scope="row">type</th><td>' + Autolinker.link(String(feature.properties['type'])) + '</td></tr><tr><th scope="row">name</th><td>' + Autolinker.link(String(feature.properties['name'])) + '</td></tr></table>';
+	layer.bindPopup(popupContent);
+
+
+				}
+						
+				var exp_CityJSON = new L.geoJson(exp_City,{
+					onEachFeature: pop_City,
+					style: function (feature) {
+						return {color: feature.properties.border_color_qgis2leaf,
+								fillColor: feature.properties.color_qgis2leaf,
+								weight: feature.properties.radius_qgis2leaf,
+								dashArray: feature.properties.border_style_qgis2leaf,
+								opacity: feature.properties.transp_qgis2leaf,
+								fillOpacity: feature.properties.transp_fill_qgis2leaf};
+						}
+					});
+				feature_group.addLayer(exp_CityJSON);
+				layerOrder[layerOrder.length] = exp_CityJSON;
+				for (index = 0; index < layerOrder.length; index++) {
+					feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
+				}
+				
+						//add comment sign to hide this layer on the map in the initial view.
+						//exp_CityJSON.addTo(map);
 							function pop_15(feature, layer) {
 										
 	var popupContent = '<table><tr><th scope="row">FacilityID</th><td>' + Autolinker.link(String(feature.properties['FacilityID'])) + '</td></tr><tr><th scope="row">Name</th><td>' + Autolinker.link(String(feature.properties['Name'])) + '</td></tr><tr><th scope="row">FromBreak</th><td>' + Autolinker.link(String(feature.properties['FromBreak'])) + '</td></tr><tr><th scope="row">ToBreak</th><td>' + Autolinker.link(String(feature.properties['ToBreak'])) + '</td></tr><tr><th scope="row">Shape_Length</th><td>' + Autolinker.link(String(feature.properties['Shape_Length'])) + '</td></tr><tr><th scope="row">Shape_Area</th><td>' + Autolinker.link(String(feature.properties['Shape_Area'])) + '</td></tr></table>';
@@ -522,7 +580,7 @@
 		'OSM Standard': basemap_0,
 		'OSM Humanitarian': basemap_1,
 		'Thunderforest Landscape': basemap_2};
-	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 Minutes": exp_7JSON,"8 Minutes": exp_8JSON,"15 Minutes": exp_15JSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": exp_StationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:true}).addTo(map);
+	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 Minutes": exp_7JSON,"8 Minutes": exp_8JSON,"15 Minutes": exp_15JSON,"City Boundary": exp_CityJSON,"CSD Boundary": exp_CSDJSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": exp_StationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:true}).addTo(map);
 	//L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 	</script>
 </body>
