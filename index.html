@@ -18,6 +18,7 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 </head>
 <body>
+
 	<div id="map"></div> <!-- this is the initial look of the map. in most cases it is done externally using something like a map.css stylesheet were you can specify the look of map elements, like background color tables and so on.-->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script> <!-- this is the javascript file that does the magic-->
 	<script src="js/leaflet-hash.js"></script>
@@ -589,6 +590,28 @@
     		return div;
 		};
 		logo.addTo(map);
+
+		var graph = L.control({position: 'topleft'});
+ 
+		function showGraph() {
+			var div = document.getElementById("info graph")
+			div.innerHTML = "<a href=\"https://plot.ly/~slugis/8\" target=\"_blank\"><img src=\"https://plot.ly/~slugis/8.png\" alt=\"FOS Pass vs BOA Pass\"></a>";
+		}
+ 
+		function hideGraph() {
+			var div = document.getElementById("info graph")
+			div.innerHTML = "<h2>2014 STATS</h2>";
+		}
+		
+		graph.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'info graph');
+		div.innerHTML = "<h2>2014 STATS</h2>";
+		div.setAttribute("onmouseenter", "showGraph()");
+		div.setAttribute("onmouseleave", "hideGraph()");
+		div.id = "info graph"
+    		return div;
+		};
+		graph.addTo(map);
 
 	var baseMaps = {
 		'OSM Standard': basemap_0,
