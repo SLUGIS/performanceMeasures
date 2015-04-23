@@ -559,28 +559,28 @@
 			});
 		osmGeocoder.addTo(map);
 		
-		var legend = L.control({position: 'bottomright'});
+		var disclaimer = L.control({position: 'bottomright'});
  
 		function showDisclaimer() {
-			var div = document.getElementById("info legend")
+			var div = document.getElementById("info disclaimer")
 			div.innerHTML = "<h6>DISCLAIMER:<br>CAL FIRE/SLU make no representations or warranties regarding<br> the accuracy of data or maps. The user will not seek to hold CAL FIRE/SLU liable<br> under any circumstances for any damages with respect to any claim<br> by the user or any third party on account of or arising from the use of data or maps.<br>Incident data includes only code 3 calls for medical and fire emergencies<br>in the County Service Areas and county contracts of Los Osos and Avila Beach.</h3><table></table>";
 		}
  
 		function hideDisclaimer() {
-			var div = document.getElementById("info legend")
+			var div = document.getElementById("info disclaimer")
 			div.innerHTML = "<h2>DISCLAIMER</h2>";
 		}
 		
-		legend.onAdd = function (map) {
-		var div = L.DomUtil.create('div', 'info legend');
+		disclaimer.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'info disclaimer');
 		div.innerHTML = "<h2>DISCLAIMER</h2>";
 		div.setAttribute("onmouseenter", "showDisclaimer()");
 		div.setAttribute("onmouseleave", "hideDisclaimer()");
-		div.id = "info legend"
+		div.id = "info disclaimer"
  
     		return div;
 		};
-		legend.addTo(map);
+		disclaimer.addTo(map);
 
 		var logo = L.control({position: 'bottomleft'});
 		
