@@ -32,11 +32,11 @@
 				
 				<script src='data/exp_AllIncidents2014.js' ></script>
 				
-				<script src='data/exp_7.js' ></script>
+				<script src='data/exp_4.js' ></script>
 				
-				<script src='data/exp_8.js' ></script>
+				<script src='data/exp_5.js' ></script>
 				
-				<script src='data/exp_15.js' ></script>
+				<script src='data/exp_12.js' ></script>
 
 				<script src='data/exp_City.js' ></script>
 				
@@ -383,7 +383,7 @@
 
 				}
 						
-				var exp_15JSON = new L.geoJson(exp_15,{
+				var exp_12JSON = new L.geoJson(exp_12,{
 					onEachFeature: pop_15,
 					style: function (feature) {
 						return {color: feature.properties.border_color_qgis2leaf,
@@ -394,14 +394,14 @@
 								fillOpacity: feature.properties.transp_fill_qgis2leaf};
 						}
 					});
-				feature_group.addLayer(exp_15JSON);
-				layerOrder[layerOrder.length] = exp_15JSON;
+				feature_group.addLayer(exp_12JSON);
+				layerOrder[layerOrder.length] = exp_12JSON;
 				for (index = 0; index < layerOrder.length; index++) {
 					feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
 				}
 				
 						//add comment sign to hide this layer on the map in the initial view.
-						//exp_15JSON.addTo(map);
+						//exp_12JSON.addTo(map);
 							function pop_8(feature, layer) {
 										
 	var popupContent = '<table><tr><th scope="row">FacilityID</th><td>' + Autolinker.link(String(feature.properties['FacilityID'])) + '</td></tr><tr><th scope="row">Name</th><td>' + Autolinker.link(String(feature.properties['Name'])) + '</td></tr><tr><th scope="row">FromBreak</th><td>' + Autolinker.link(String(feature.properties['FromBreak'])) + '</td></tr><tr><th scope="row">ToBreak</th><td>' + Autolinker.link(String(feature.properties['ToBreak'])) + '</td></tr><tr><th scope="row">Shape_Length</th><td>' + Autolinker.link(String(feature.properties['Shape_Length'])) + '</td></tr><tr><th scope="row">Shape_Area</th><td>' + Autolinker.link(String(feature.properties['Shape_Area'])) + '</td></tr></table>';
@@ -410,7 +410,7 @@
 
 				}
 						
-				var exp_8JSON = new L.geoJson(exp_8,{
+				var exp_5JSON = new L.geoJson(exp_5,{
 					onEachFeature: pop_8,
 					style: function (feature) {
 						return {color: feature.properties.border_color_qgis2leaf,
@@ -421,14 +421,14 @@
 								fillOpacity: feature.properties.transp_fill_qgis2leaf};
 						}
 					});
-				feature_group.addLayer(exp_8JSON);
-				layerOrder[layerOrder.length] = exp_8JSON;
+				feature_group.addLayer(exp_5JSON);
+				layerOrder[layerOrder.length] = exp_5JSON;
 				for (index = 0; index < layerOrder.length; index++) {
 					feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
 				}
 				
 						//add comment sign to hide this layer on the map in the initial view.
-						//exp_8JSON.addTo(map);
+						//exp_5JSON.addTo(map);
 							function pop_7(feature, layer) {
 										
 	var popupContent = '<table><tr><th scope="row">FacilityID</th><td>' + Autolinker.link(String(feature.properties['FacilityID'])) + '</td></tr><tr><th scope="row">Name</th><td>' + Autolinker.link(String(feature.properties['Name'])) + '</td></tr><tr><th scope="row">FromBreak</th><td>' + Autolinker.link(String(feature.properties['FromBreak'])) + '</td></tr><tr><th scope="row">ToBreak</th><td>' + Autolinker.link(String(feature.properties['ToBreak'])) + '</td></tr><tr><th scope="row">Shape_Length</th><td>' + Autolinker.link(String(feature.properties['Shape_Length'])) + '</td></tr><tr><th scope="row">Shape_Area</th><td>' + Autolinker.link(String(feature.properties['Shape_Area'])) + '</td></tr></table>';
@@ -437,7 +437,7 @@
 
 				}
 						
-				var exp_7JSON = new L.geoJson(exp_7,{
+				var exp_4JSON = new L.geoJson(exp_4,{
 					onEachFeature: pop_7,
 					style: function (feature) {
 						return {color: feature.properties.border_color_qgis2leaf,
@@ -448,14 +448,14 @@
 								fillOpacity: feature.properties.transp_fill_qgis2leaf};
 						}
 					});
-				feature_group.addLayer(exp_7JSON);
-				layerOrder[layerOrder.length] = exp_7JSON;
+				feature_group.addLayer(exp_4JSON);
+				layerOrder[layerOrder.length] = exp_4JSON;
 				for (index = 0; index < layerOrder.length; index++) {
 					feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
 				}
 				
 						//add comment sign to hide this layer on the map in the initial view.
-						//exp_7JSON.addTo(map);
+						//exp_4JSON.addTo(map);
 							function pop_AllIncidents2014(feature, layer) {
 										
 	var popupContent = '<table><tr><th scope="row">DATE</th><td>' + Autolinker.link(String(feature.properties['DATE'])) + '</td></tr><tr><th scope="row">JURS</th><td>' + Autolinker.link(String(feature.properties['JURS'])) + '</td></tr><tr><th scope="row">FACILITY</th><td>' + Autolinker.link(String(feature.properties['FACILITY'])) + '</td></tr><tr><th scope="row">DSP_TIME</th><td>' + Autolinker.link(String(feature.properties['DSP_TIME'])) + '</td></tr><tr><th scope="row">ENR_TIME</th><td>' + Autolinker.link(String(feature.properties['ENR_TIME'])) + '</td></tr><tr><th scope="row">ONS_TIME</th><td>' + Autolinker.link(String(feature.properties['ONS_TIME'])) + '</td></tr><tr><th scope="row">DSP_TO_ONS</th><td>' + Autolinker.link(String(feature.properties['DSP_TO_ONS'])) + '</td></tr><tr><th scope="row">FINTYPEDES</th><td>' + Autolinker.link(String(feature.properties['FINTYPEDES'])) + '</td></tr><tr><th scope="row">UNIT</th><td>' + Autolinker.link(String(feature.properties['UNIT'])) + '</td></tr><tr><th scope="row">XCOORD</th><td>' + Autolinker.link(String(feature.properties['XCOORD'])) + '</td></tr><tr><th scope="row">YCOORD</th><td>' + Autolinker.link(String(feature.properties['YCOORD'])) + '</td></tr><tr><th scope="row">FRPNAME</th><td>' + Autolinker.link(String(feature.properties['FRPNAME'])) + '</td></tr><tr><th scope="row">callCode</th><td>' + Autolinker.link(String(feature.properties['callCode'])) + '</td></tr><tr><th scope="row">incident</th><td>' + Autolinker.link(String(feature.properties['incident'])) + '</td></tr></table>';
@@ -563,7 +563,7 @@
  
 		function showDisclaimer() {
 			var div = document.getElementById("info disclaimer")
-			div.innerHTML = "<h6>DISCLAIMER:<br>CAL FIRE/SLU make no representations or warranties regarding<br> the accuracy of data or maps. The user will not seek to hold CAL FIRE/SLU liable<br> under any circumstances for any damages with respect to any claim<br> by the user or any third party on account of or arising from the use of data or maps.<br>Incident data includes only code 3 calls for medical and fire emergencies<br>in the County Service Areas and county contracts of Los Osos and Avila Beach.</h3><table></table>";
+			div.innerHTML = "<h6>DISCLAIMER:<br>CAL FIRE/SLU make no representations or warranties regarding<br> the accuracy of data or maps. The user will not seek to hold CAL FIRE/SLU liable<br> under any circumstances for any damages with respect to any claim<br> by the user or any third party on account of or arising from the use of data or maps.<br>Incident data includes only code 3 calls for medical and fire emergencies<br>in the County Service Areas and county contracts of Los Osos and Avila Beach.</h6><table></table>";
 		}
  
 		function hideDisclaimer() {
@@ -617,7 +617,7 @@
 		'OSM Standard': basemap_0,
 		'OSM Humanitarian': basemap_1,
 		'Thunderforest Landscape': basemap_2};
-	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"7 Minutes": exp_7JSON,"8 Minutes": exp_8JSON,"15 Minutes": exp_15JSON,"City Boundary": exp_CityJSON,"CSD Boundary": exp_CSDJSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": exp_StationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:true}).addTo(map);
+	L.control.layers(baseMaps,{"First On Scene Failures": cluster_groupFirstOnSceneFailuresJSON,"Balance of Alarm Failures": cluster_groupBalanceofAlarmFailuresJSON,"All Incidents 2014": cluster_groupAllIncidents2014JSON,"4 Minutes": exp_4JSON,"5 Minutes": exp_5JSON,"12 Minutes": exp_12JSON,"City Boundary": exp_CityJSON,"CSD Boundary": exp_CSDJSON,"URL": exp_URLJSON,"VRL": exp_VRLJSON,"Battalions": exp_BattalionsJSON,"Stations": exp_StationsJSON,"Undeveloped": exp_UndevelopedJSON,"Remote": exp_RemoteJSON,"Rural": exp_RuralJSON,"Suburban": exp_SuburbanJSON,"Urban": exp_UrbanJSON},{collapsed:true}).addTo(map);
 	//L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 	</script>
 </body>
