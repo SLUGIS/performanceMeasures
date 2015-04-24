@@ -15,7 +15,7 @@
 
 6.  Using Join by Location in QGIS join each of the two new layers with 'atoms_dt'.  This will merge the category field wit the incidents.  
 
-7.  Following [Joe's example](https://gist.github.com/oeon/c3e67e745f78da4b2a11) determine the pass/fail percentage for each category.  
+7.  Following [Joe's example](https://gist.github.com/oeon/c3e67e745f78da4b2a11 "Strategic Plan GIS Notes") determine the pass/fail percentage for each category.  
 
 8.  Archive former FOS and BOA incident data.  
 
