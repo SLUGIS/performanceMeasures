@@ -27,4 +27,4 @@
 
 11.  Using qgis2leaf export the map to the desktop.  The transparency will not render for the polygon layers and it will not look exactly like the live map.  This is because qgis2leaf still can't handle some styling options.  Don't worry about this as you only need to replace the current FOS and BOA layers with your new ones that are in the `/data` folder within your newly exported folder on the desktop.  
 
-12.  Simply copy and replace the exp_FOS.js and exp_BOA.js into the matching folder in the GitHub repo and you should be set.  Test it on a local copy first to ensure it is working before you commit it to the gh-pages branch. 
+12.  Simply copy and replace the `exp_FOS.js` and `exp_BOA.js` into the matching folder in the GitHub repo and you should be set.  ####Test it on a local copy first to ensure it is working before you commit it to the gh-pages branch. 
