@@ -4,7 +4,7 @@
 ###Steps  
 1.  Recieve incident spreadsheet from Bill Winter and Greg Alex.  
 
-2.  Filter out First O Scene and Balance of Alarm using this code:  
+2.  Filter out First On Scene and Balance of Alarm using this code in Excel:  
 `=IF(A2<>A1,"FIRST",IF(F1="FIRST","SECOND",IF(F1="second","THIRD",IF(F1="third","FOURTH","N/A"))))`  
 
 3.  Save this file out as a CSV.  
