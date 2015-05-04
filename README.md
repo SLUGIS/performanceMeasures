@@ -32,8 +32,7 @@
 ##BEFORE COMMITING CHANGES  
 
 ####¡¡¡Test it by opening the index.html in a browser  first to ensure it is working before you commit it to the gh-pages branch!!!    
-
-13.  Commit the changes and sync them.
+--------------------------------------------------------------------------------------------------------------------------
 
 ###Statistics Graph  
 The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `slugis` account wth standard email and password credentials.  The graph is a stacked bar chart.  Follow these steps to create the chart:  
