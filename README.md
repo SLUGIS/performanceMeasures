@@ -13,13 +13,13 @@
 
 5.  Save shapefiles of both the First On Scene and Balancae of Alarm incidents.   
 
-6.  Using Join by Location in QGIS join each of the two new layers with 'ServiceLevelAreas'.  This will merge the category field with the incidents.  
+6.  Using Join Attributes by Location in QGIS (Vector->Data Management Tools->Join Attributes by Location) join each of the two new layers with 'ServiceLevelAreas'.  This will merge the category field with the incidents.  
 
 7.  Following [Joe's example](https://gist.github.com/oeon/c3e67e745f78da4b2a11 "Strategic Plan GIS Notes") determine the pass/fail percentage for each category.  
 
 8.  Archive former FOS and BOA incident data in `/archivedIncidents`.  
 
-9.  Strip out all of the fields from your FOS and BOA shapefiles except: DATE, TIME, INCIDENT, TYPE, DSP_TO_ONS, UNIT.  Make sure they appear in the attribute table in this order too.  Use the Table Manager plugin in QGIS to rename and reorder them.  
+9.  Strip out all of the fields from your FOS and BOA shapefiles except: DATE, TIME, INCIDENT, TYPE, DSP_TO_ONS, UNIT.  Make sure they appear in the attribute table in this order too.  Use the [Table Manager plugin](https://plugins.qgis.org/plugins/tablemanager/ "Table Manager plugin") in QGIS to rename and reorder them.  
 
 10.  Style the new incident data in QGIS:      
 `FOS = black circle w/white outline, size=5.0, outline width=0.4`   
