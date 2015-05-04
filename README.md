@@ -34,3 +34,29 @@
 ####¡¡¡Test it by opening the index.html in a browser  first to ensure it is working before you commit it to the gh-pages branch!!!    
 
 13.  Commit the changes and sync them.
+
+###Statistics Graph  
+The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `slugis` account wth standard email and password credentials.  The graph is a stacked bar chart.  Follow these steps to create the chart:  
+
+1.  Create a new grid under the Workspace tab in Plotly.  
+
+2.   Set it up like this table:  
+
+|First On Scene|Name|Balance of Alarm|Name2|Standards
+|----------|-------|-------------|-----|-----------
+|  % |   Urban Pass   |   %   |  Urban Pass    |  90     
+|  % |   Suburban Pass|   %   |  Suburban Pass |  90    
+|  % |   Rural Pass   |   %   |  Rural Pass    |  85 
+|  % |   Remote Pass  |   %   |  Remote Pass   |  80   
+
+3.  Select First On Scene and Name as blue *y*&*x* columns.  
+
+4.  Select Balance of Alarm and Name2 as green *y*&*x* columns.  
+
+5.  Select Statistics as any color *y* column.  
+
+6.  Make sure both colors are being represented as bar charts and then create the bar chart.  
+
+7.  Now you can tweak the layout and add *%* as a suffix for the axes.  
+
+8.  Save the graph and click the Share button to get the link.  Replace the existing links in the `index.html` for `function showGraph` at line 598.
