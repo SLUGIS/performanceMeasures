@@ -27,7 +27,7 @@
 
 11.  Using **qgis2leaf** export the map to the desktop.  The transparency will not render for the polygon layers and it will not look exactly like the live map.  This is because qgis2leaf still can't handle some styling options.  Don't worry about this as you only need to replace the current FOS and BOA layers in this repo with your new ones that are in the `\data` folder within your newly exported folder on the desktop.  
 
-12.  Clone the **performanceMeasures** repo to your desktop.  Copy and paste your newly exported FOS and BOA layers into the `\data` folder in this repo.
+12.  Clone this **performanceMeasures** repo to your desktop.  Copy and paste your newly exported FOS and BOA layers into the `\data` folder in this repo.
 
 ##BEFORE COMMITING CHANGES  
 
