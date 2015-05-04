@@ -9,7 +9,7 @@
 
 3.  Save this file as a CSV.  
 
-4.  Open the CSV in QGIS and plot it using the LAT(y) and LON(x) columns.  
+4.  Open the CSV in QGIS and plot it using the YCOORD(latitude) and XCOORD(longitude) columns.  
 
 5.  Save shapefiles of both the First On Scene and Balancae of Alarm incidents.   
 
