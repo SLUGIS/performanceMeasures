@@ -11,7 +11,7 @@
 
 4.  Open the CSV in QGIS and plot it using the YCOORD(latitude) and XCOORD(longitude) columns.  
 
-5.  Save shapefiles of both the First On Scene and Balancae of Alarm incidents.   
+5.  Save shapefiles of both the First On Scene and Balance of Alarm incidents.   
 
 6.  Using Join Attributes by Location in QGIS (Vector->Data Management Tools->Join Attributes by Location) join each of the two new layers with 'ServiceLevelAreas'.  This will merge the category field with the incidents.  
 
