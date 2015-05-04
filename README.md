@@ -48,11 +48,11 @@ The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `
 |  % |   Rural Pass   |   %   |  Rural Pass    |  85 
 |  % |   Remote Pass  |   %   |  Remote Pass   |  80   
 
-3.  Select First On Scene and Name as blue *y*&*x* columns.  
+3.  Select First On Scene(*y*) and Name(*x*) as blue columns.  
 
-4.  Select Balance of Alarm and Name2 as green *y*&*x* columns.  
+4.  Select Balance of Alarm(*y*) and Name2(*x*) as green columns.  
 
-5.  Select Statistics as any color *y* column.  
+5.  Select Statistics(*y*) as any color column.  
 
 6.  Make sure both colors are being represented as bar charts and then create the bar chart.  
 
