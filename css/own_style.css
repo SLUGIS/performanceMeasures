@@ -28,6 +28,15 @@
     margin: 0 0 5px;
     color: #777;
 }
+    .info h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
 		.leaflet-container {
     background: #FFF;
 </style>
