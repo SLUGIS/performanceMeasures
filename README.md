@@ -25,7 +25,7 @@
 `FOS = black circle w/white outline, size=5.0, outline width=0.4`   
 `BOA = white circle w/black outline; size=5.0, outline width=0.4`  
 
-11.  Using **qgis2leaf** export the map to the desktop.  If you open the `index.html` the transparency will not render for the polygon layers and it will not look exactly like the live map.  This is because qgis2leaf still can't handle some styling options.  Don't worry about this as you only need to replace the live FOS and BOA layers in the `\data` folder of the **performanceMeasures** repo.  
+11.  Use **qgis2leaf**(Web->qgis2leaf) to export the map to the desktop.  If you open the `index.html` the transparency will not render for the polygon layers and it will not look exactly like the live map.  This is because qgis2leaf still can't handle some styling options.  Don't worry about this as you only need to replace the live FOS and BOA layers in the `\data` folder of the **performanceMeasures** repo.  
 
 12.  Clone this **performanceMeasures** repo to your desktop.  Copy and paste your newly exported FOS and BOA layers into the `\data` folder in this repo.
 
