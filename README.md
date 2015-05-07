@@ -29,13 +29,13 @@
 
 12.  Clone this **performanceMeasures** repo to your desktop.  Copy and paste your newly exported FOS and BOA layers into the `\data` folder in this repo.
 
-##BEFORE COMMITING CHANGES  
+##BEFORE COMMITTING CHANGES  
 
 ####¡¡¡Test it by opening the index.html in a browser  first to ensure it is working before you commit it to the gh-pages branch!!!    
 --------------------------------------------------------------------------------------------------------------------------
 
 ###Statistics Graph  
-The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `slugis` account wth standard email and password credentials.  The graph is a stacked bar chart.  Follow these steps to create the chart:  
+The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `slugis` account with standard email and password credentials.  The graph is a stacked bar chart.  Follow these steps to create the chart:  
 
 1.  Create a new grid under the Workspace tab in Plotly.  
 
@@ -48,14 +48,16 @@ The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `
 |  % |   Rural Pass   |   %   |  Rural Pass    |  85 
 |  % |   Remote Pass  |   %   |  Remote Pass   |  80   
 
-3.  Select First On Scene(*y*) and Name(*x*) as blue columns.  
+3.  You will need to fill in the percentages for FOS and BOA from your previous calculations (*Step 7*).
 
-4.  Select Balance of Alarm(*y*) and Name2(*x*) as green columns.  
+4.  Select First On Scene(*y*) and Name(*x*) as blue columns.  
 
-5.  Select Statistics(*y*) as any color column.  
+5.  Select Balance of Alarm(*y*) and Name2(*x*) as green columns.  
 
-6.  Make sure both colors are being represented as bar charts and then create the bar chart.  
+6.  Select Statistics(*y*) as any color column.  
 
-7.  Now you can tweak the layout and add *%* as a suffix for the axes.  
+7.  Make sure both colors are being represented as bar charts and then create the bar chart.  
 
-8.  Save the graph and click the Share button to get the link.  Replace the existing links in the `index.html` for `function showGraph` at line 598.
+8.  Now you can tweak the layout and add *%* as a suffix for the axes.  
+
+9.  Save the graph and click the Share button to get the link.  Replace the existing links in the `index.html` for `function showGraph` at line 598.
