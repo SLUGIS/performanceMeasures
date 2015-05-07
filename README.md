@@ -48,7 +48,7 @@ The statistics graph is made using [Plotly](https://plot.ly/ "Plotly") under a `
 |  % |   Rural Pass   |   %   |  Rural Pass    |  85 
 |  % |   Remote Pass  |   %   |  Remote Pass   |  80   
 
-3.  You will need to fill in the percentages for FOS and BOA from your previous calculations (*Step 7*).
+*  You will need to fill in the percentages for FOS and BOA from your previous calculations (*Step 7*).
 
 4.  Select First On Scene(*y*) and Name(*x*) as blue columns.  
 
