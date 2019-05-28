@@ -1,3 +1,5 @@
+https://slugis.github.io/performanceMeasures
+
 #How to Update Performance Measures Map
 #####This map was produced using the annual incident data from Bill Winter and filtered by Greg Alex.  It also relies on subsets of a layer called 'ServiceLevelAreas' that categorizes areas as either *Urban*, *Suburban*, *Rural*, *Remote* or *Undeveloped* in accordance with the [Strategic Plan specifications](http://www.calfireslo.org/Documents/Plans/FINALstratPlan%28reduced%29.pdf#page=165 "Service Level Decision Model").  This layer is subject to change as time goes on and can be found in the ServiceLevelAreas.gdb.  
 
